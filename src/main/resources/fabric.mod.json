@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "annotationtoolbox",
+  "version": "${version}",
+  "name": "AnnotationToolBox",
+  "description": "---",
+  "authors": [
+    "1024_byteeeee"
+  ],
+  "contact": {
+    "website": "---",
+    "repo": "---"
+  },
+  "license": "MIT",
+  "icon": "assets/annotationtoolbox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.byteeeee.annotationtoolbox.AnnotationToolBox"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.10.4"
+  }
+}

@@ -1,0 +1,27 @@
+name: Dev Builds
+
+on:
+  push:
+    paths:
+      - "*.gradle"
+      - "gradle.properties"
+      - "src/**"
+      - ".github/**"
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: 17
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build/libs/
