@@ -3,13 +3,13 @@
   "id": "annotationtoolbox",
   "version": "${version}",
   "name": "AnnotationToolBox",
-  "description": "---",
+  "description": " ",
   "authors": [
     "1024_byteeeee"
   ],
   "contact": {
-    "website": "---",
-    "repo": "---"
+    "website": " ",
+    "repo": " "
   },
   "license": "MIT",
   "icon": "assets/annotationtoolbox/icon.png",
@@ -21,5 +21,13 @@
   },
   "depends": {
     "fabricloader": ">=0.10.4"
+  },
+  "custom": {
+    "modmenu:api": false,
+    "modmenu": {
+      "badges": [
+        "library"
+      ]
+    }
   }
 }
